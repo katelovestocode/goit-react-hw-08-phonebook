@@ -24,7 +24,7 @@ state = {
 
    const dublicateContact = this.checkDublicateContact(contact, this.state.contacts);
   
-    dublicateContact ? alert(`${contact.name} is already in contacts`) : this.setState(prevState => ({ contacts: [contact, ...prevState.contacts] }))
+    dublicateContact ? alert(`${contact.name} is already in contacts`) : this.setState(prevState => ({ contacts: [...prevState.contacts, contact] }))
     
   }
 
