@@ -21,11 +21,13 @@ justify-conten: center;
 `
 
 export const Input = styled.input`
-font-size:  ${p => p.theme.fontSizes.sm};
+width: 250px;
 padding: ${p => p.theme.space[2]}px;
 border:  ${p => p.theme.borders.bold} ${p => p.theme.colors.brightAccent};
 border-radius:${p => p.theme.radii.normal};
-width: 250px;
+background-color: ${p => p.theme.colors.ivoryLight};
+color: ${p => p.theme.colors.accentColor};
+font-size: 28px;
 `
 
 export const Text = styled.p`

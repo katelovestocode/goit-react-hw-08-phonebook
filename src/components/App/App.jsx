@@ -3,7 +3,7 @@ import { Box } from '../Box';
 import ContactForm from "../ContactForm/ContactForm"
 import ContactList from "../ContactList/ContactList"
 import Filter from "../Filter/Filter"
-import {Title} from "./App.styled"
+import {Title, Container} from "./App.styled"
 import { nanoid } from 'nanoid'
 
 
@@ -50,14 +50,17 @@ state = {
 
     return (
 
-      <Box display="flex" flexDirection="row" alignItems='center'  justifyContent="space-between"  p={30} as="main">
+      <Box display="flex" flexDirection="row" alignItems='center'  justifyContent="space-around"  p={30} as="main">
 
         <Title> Phonebook </Title>
-        <ContactForm onSubmitingForm={this.handleSubmit} /> 
+        <ContactForm onSubmittingForm={this.handleSubmit} /> 
 
+        <Container> 
         <Filter value={this.state.filter} onChange={this.changeFilter} />
        
         <ContactList contacts={visibleContacts} onDeleteContact={this.deleteContact} />
+        </Container>
+      
       </Box>
     )
   }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Label, Input, Text, Title } from "./Filter.styled"
-import {Box} from "../Box"
+import { Box } from "../Box"
+import PropTypes from 'prop-types';
 
 const Filter = ({value, onChange}) => {
     return <Box display="flex" flexDirection="column" alignItems='center' justifyContent="center" p={30} >
@@ -10,3 +11,8 @@ const Filter = ({value, onChange}) => {
 }
 
 export default Filter;
+
+Filter.propTypes = {
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+};

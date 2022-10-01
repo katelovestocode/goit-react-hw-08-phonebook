@@ -10,6 +10,7 @@ export const theme = {
     brightAccent: '#ECCCB2',
     darkAccent: '#7A4069',
     ivoryLight: '#F5E8C7',
+    brown: '#874C62',
   },
   space: [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 'auto'],
   fonts: {

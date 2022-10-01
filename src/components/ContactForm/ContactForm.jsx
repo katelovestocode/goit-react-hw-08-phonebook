@@ -1,6 +1,7 @@
 import { Component } from 'react';
-import { Form, Label, Input, Text, Button} from "./ContactForm.styled"
-import {Box} from "../Box"
+import { Form, Label, Input, Text, Button } from "./ContactForm.styled"
+import PropTypes from 'prop-types';
+
 
 
 class ContactForm extends Component {
@@ -20,7 +21,7 @@ class ContactForm extends Component {
         event.preventDefault();
         console.log(this.state)
            
-        this.props.onSubmitingForm(this.state);
+        this.props.onSubmittingForm(this.state);
 
         this.reset();
     }
@@ -61,3 +62,8 @@ class ContactForm extends Component {
 
 
 export default ContactForm;
+
+
+ContactForm.propTypes = {
+  onSubmittingForm: PropTypes.func.isRequired,
+};
