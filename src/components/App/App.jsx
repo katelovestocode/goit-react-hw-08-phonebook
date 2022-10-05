@@ -44,6 +44,28 @@ state = {
     return this.state.contacts.filter(contact => contact.name.toLowerCase().includes(normalizedFilter))
   }
  
+  componentDidMount() {
+    // console.log("Component Did Mount")
+
+    const contacts = localStorage.getItem("contacts");
+    const parsedContacts = JSON.parse(contacts);
+    
+    if (parsedContacts) {
+      this.setState({ contacts: parsedContacts });
+   }
+  }
+
+  componentDidUpdate(prevProps, prevState) { 
+    // console.log(prevState)
+    // console.log(this.state)
+
+    if (this.state.contacts !== prevState.contacts) {
+
+      localStorage.setItem("contacts", JSON.stringify(this.state.contacts));
+    }
+  }
+  
+
   render() {
 
     const visibleContacts = this.getVisibleContacts();
