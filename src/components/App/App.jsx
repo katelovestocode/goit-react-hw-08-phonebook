@@ -15,23 +15,30 @@ state = {
   }
   
 
-  handleSubmit = ({id, name, number}) => {
+  handleSubmit = ({ name, number}) => {
     const contact = {
       id: nanoid(),
       name,
       number,
     }
 
-   const dublicateContact = this.checkDublicateContact(contact, this.state.contacts);
-  
-    dublicateContact ? alert(`${contact.name} is already in contacts`) : this.setState(prevState => ({ contacts: [...prevState.contacts, contact] }))
+    this.addNewContact(contact);
+
+    //  const dublicateContact = this.checkDublicateContact(contact, this.state.contacts);
+    //   dublicateContact ? alert(`${contact.name} is already in contacts`) : 
+    //   this.setState(prevState => ({ contacts: [...prevState.contacts, contact] }))
     
   }
 
-  checkDublicateContact = (contact, contactsList) => {
-    return contactsList.find(item => item.name.toLowerCase() === contact.name.toLowerCase()
-    );
-  };
+  // checkDublicateContact = (contact, contactsList) => {
+  //   return contactsList.find(item => item.name.toLowerCase() === contact.name.toLowerCase()
+  //   );
+  // };
+
+  addNewContact = (contact) => {
+    this.setState(prevState => prevState.contacts.find(item => item.name.toLowerCase() === contact.name.toLowerCase()) ? alert(`${contact.name} is already in contacts`) :
+      {contacts: [contact, ...prevState.contacts]})
+  }
 
   deleteContact = contactId => {
     this.setState(prevState => ({contacts: prevState.contacts.filter(contact => contact.id !== contactId)}))
