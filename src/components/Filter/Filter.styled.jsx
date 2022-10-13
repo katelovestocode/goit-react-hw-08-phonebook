@@ -27,6 +27,6 @@ font-weight: ${p => p.theme.fontWeights.bold};
 `
 export const Title = styled.h2`
 padding: ${p => p.theme.space[2]}px;
-font-size:  ${p => p.theme.fontSizes.ml};
+font-size: 56px;
 color: ${p => p.theme.colors.accentColor};
 `
