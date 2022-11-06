@@ -18,7 +18,8 @@ flex-direction: column;
 padding: ${p => p.theme.space[4]}px;
 `
 export const Loader = styled.p`
-margin:  ${p => p.theme.fontSizes.ml};
+margin-left: ${p => p.theme.fontSizes.ml};
+margin-bottom: ${p => p.theme.fontSizes.l};
 color: ${p => p.theme.colors.darkAccent};
-font-size:  ${p => p.theme.fontSizes.l};
+font-size: 28px;
 `
