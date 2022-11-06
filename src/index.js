@@ -6,7 +6,6 @@ import { ThemeProvider } from '@emotion/react';
 import { App } from './components/App/App.jsx';
 import { store } from './redux/store';
 import { Provider } from 'react-redux';
-// import { PersistGate } from 'redux-persist/integration/react';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
