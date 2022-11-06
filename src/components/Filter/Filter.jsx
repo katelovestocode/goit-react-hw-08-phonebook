@@ -13,9 +13,9 @@ const Filter = () => {
   dispatch(setFilter(event.currentTarget.value));
   }
 
-  return <Box display="flex" flexDirection="column" alignItems='center' justifyContent="center" p={30} >
+  return <Box display="flex" flexDirection="column" alignItems='center' justifyContent="center" p={20} >
         <Title> Contacts </Title>
-        <Label> <Text> Find Contact by Name </Text>
+        <Label> <Text> find contact by name </Text>
             <Input type="text" value={filter} onChange={changeFilter} /> </Label> </Box>
 }
 

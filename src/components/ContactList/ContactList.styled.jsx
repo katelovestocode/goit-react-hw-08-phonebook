@@ -22,7 +22,8 @@ export const Button = styled.button`
 margin-left: ${p => p.theme.space[2]}px;
 color: ${p => p.theme.colors.darkAccent};
 font-weight: ${p => p.theme.fontWeights.bold};
-width: 60px;
+font-size: ${p => p.theme.fontSizes.xs};
+width:  25px;
 padding: ${p => p.theme.space[1]}px;
 background-color: ${p => p.theme.colors.ivoryLight};
 border:  ${p => p.theme.borders.bold} ${p => p.theme.colors.accentColor};
@@ -31,10 +32,11 @@ border-radius:${p => p.theme.radii.normal};
 export const Text = styled.p`
 color: ${p => p.theme.colors.brown};
 font-weight: ${p => p.theme.fontWeights.bold};
-font-size: 26px;
+font-size: 24px;
 `
 
 export const Span = styled.span`
 color: ${p => p.theme.colors.accentColor};
+font-size: 24px;
 
 `

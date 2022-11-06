@@ -20,7 +20,7 @@ justify-conten: center;
 `
 
 export const Input = styled.input`
-width: 250px;
+width: 300px;
 padding: ${p => p.theme.space[2]}px;
 border:  ${p => p.theme.borders.bold} ${p => p.theme.colors.brightAccent};
 border-radius:${p => p.theme.radii.normal};
