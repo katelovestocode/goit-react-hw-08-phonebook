@@ -1,9 +1,11 @@
 import {useState} from 'react';
 import { Form, Label, Input, Text, Button } from "./ContactForm.styled"
 import { nanoid } from 'nanoid'
-import { addContact} from 'redux/operations';
+import { addContact} from 'redux/contacts/operations';
 import { useDispatch, useSelector } from 'react-redux';
-import {getContacts} from "../../redux/selectors"
+import { selectContacts } from "../../redux/contacts/selectors"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactForm = () =>  {
 
@@ -11,7 +13,7 @@ const ContactForm = () =>  {
   const [number, setNumber] = useState("");
 
   const dispatch = useDispatch();
-    const contacts = useSelector(getContacts);
+    const contacts = useSelector(selectContacts);
 
 
   const handleChange = event => {
@@ -37,7 +39,16 @@ const ContactForm = () =>  {
       number,
     }
     if (checkAvailableContact(contact)) {
-    alert(`${contact.name} is already in contacts`)
+      toast.error(`${contact.name} is already in contacts`,  {
+        position:"top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
     return;
     }
     dispatch(addContact(contact));
@@ -56,7 +67,9 @@ const ContactForm = () =>  {
       setNumber("");
     }
 
-        return (
+  return (
+          
+    <> <ToastContainer />
         <Form onSubmit={handleSubmit}> 
           <Label> <Text> Name </Text>
             <Input
@@ -78,7 +91,7 @@ const ContactForm = () =>  {
     
           <Button type="submit"> Add Contact </Button>
                 </Form>
-               
+            </>
         )
     }
  

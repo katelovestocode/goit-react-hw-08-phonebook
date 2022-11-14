@@ -2,7 +2,7 @@ import React from 'react';
 import { Label, Input, Text, Title } from "./Filter.styled"
 import { Box } from "../Box"
 import { useDispatch, useSelector } from 'react-redux';
-import { setFilter } from 'redux/filter/filterSlice';
+import { setFilter } from 'redux/contacts/filter/filterSlice';
 
 const Filter = () => {
 

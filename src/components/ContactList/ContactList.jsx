@@ -1,15 +1,15 @@
 import React from 'react';
 import { List, ListItem, Button, Text, Span } from "./ContactList.styled"
 import { useDispatch, useSelector } from 'react-redux';
-import { removeContact } from 'redux/operations';
-import {getContacts, getStatusFilter} from "redux/selectors"
+import { removeContact } from 'redux/contacts/operations';
+import {selectContacts, selectStatusFilter} from "redux/contacts/selectors"
 
 const ContactList = () => {
   
   const dispatch = useDispatch();
   
-  const contacts = useSelector(getContacts);
-  const filter = useSelector(getStatusFilter);
+  const contacts = useSelector(selectContacts);
+  const filter = useSelector(selectStatusFilter);
 
 
   const deleteContact = contactId => {

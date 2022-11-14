@@ -1,6 +1,7 @@
 export const theme = {
   colors: {
     black: 'black',
+    white: 'white',
     green: 'green',
     red: 'red',
     ivory: '#EEEDE7',
@@ -11,6 +12,9 @@ export const theme = {
     darkAccent: '#7A4069',
     ivoryLight: '#F5E8C7',
     brown: '#874C62',
+    brownSecond: '#30110d',
+    lightSecond: '#722620',
+    superLightBrown: '#f2bc94',
   },
   space: [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 'auto'],
   fonts: {
@@ -25,6 +29,7 @@ export const theme = {
     sm: '20px',
     l: '32px',
     ml: '42px',
+    x: '54px',
     xl: '64px',
   },
   fontWeights: {
