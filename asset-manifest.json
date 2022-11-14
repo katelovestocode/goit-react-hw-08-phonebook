@@ -1,13 +1,24 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-08-phonebook/static/css/main.9d4db9ea.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.67792cd5.js",
+    "main.css": "/goit-react-hw-08-phonebook/static/css/main.7c2ecc5d.css",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.29eb7965.js",
+    "static/js/475.3e052712.chunk.js": "/goit-react-hw-08-phonebook/static/js/475.3e052712.chunk.js",
+    "static/js/836.9cd27afa.chunk.js": "/goit-react-hw-08-phonebook/static/js/836.9cd27afa.chunk.js",
+    "static/js/309.30ca5943.chunk.js": "/goit-react-hw-08-phonebook/static/js/309.30ca5943.chunk.js",
+    "static/js/308.9dbda1bb.chunk.js": "/goit-react-hw-08-phonebook/static/js/308.9dbda1bb.chunk.js",
+    "static/css/544.d4139ab1.chunk.css": "/goit-react-hw-08-phonebook/static/css/544.d4139ab1.chunk.css",
+    "static/media/image.jpg": "/goit-react-hw-08-phonebook/static/media/image.7d6bcb600ff47bd57cbe.jpg",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
-    "main.9d4db9ea.css.map": "/goit-react-hw-08-phonebook/static/css/main.9d4db9ea.css.map",
-    "main.67792cd5.js.map": "/goit-react-hw-08-phonebook/static/js/main.67792cd5.js.map"
+    "main.7c2ecc5d.css.map": "/goit-react-hw-08-phonebook/static/css/main.7c2ecc5d.css.map",
+    "main.29eb7965.js.map": "/goit-react-hw-08-phonebook/static/js/main.29eb7965.js.map",
+    "475.3e052712.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/475.3e052712.chunk.js.map",
+    "836.9cd27afa.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/836.9cd27afa.chunk.js.map",
+    "309.30ca5943.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/309.30ca5943.chunk.js.map",
+    "308.9dbda1bb.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/308.9dbda1bb.chunk.js.map",
+    "544.d4139ab1.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/544.d4139ab1.chunk.css.map"
   },
   "entrypoints": [
-    "static/css/main.9d4db9ea.css",
-    "static/js/main.67792cd5.js"
+    "static/css/main.7c2ecc5d.css",
+    "static/js/main.29eb7965.js"
   ]
 }
