@@ -10,7 +10,7 @@ export const UserMenu = () => {
 
   return (
     <Box display="flex" alignItems='center' as="div" justifyContent="center">
-      <Greeting> Welcome, {user.name} </Greeting>
+      <Greeting> <span>&#128522;</span> Welcome, {user.name} </Greeting>
       <Button type="button" onClick={() => dispatch(logOut())}>
         Logout
       </Button>

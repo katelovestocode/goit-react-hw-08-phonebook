@@ -1,11 +1,14 @@
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { logIn } from 'redux/auth/operations';
-import {Form, Input, Label, Button, Text} from "./LoginForm.styled"
+import {Form, Input, Label, Button, Text, Warning} from "./LoginForm.styled"
+import { selectIsError } from "../../redux/auth/selectors"
 
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
+  const error = useSelector(selectIsError);
 
+  
   const handleSubmit = e => {
     e.preventDefault();
     const form = e.currentTarget;
@@ -18,8 +21,11 @@ export const LoginForm = () => {
     form.reset();
   };
 
+
+
   return (
-    <Form  onSubmit={handleSubmit} autoComplete="off">
+    <Form onSubmit={handleSubmit} autoComplete="off">
+      {error && <Warning> Please enter correct credentials </Warning>}
       <Label >
         <Text> Email </Text>
         <Input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>

@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 
 export const Title = styled.h1`
 padding: ${p => p.theme.space[2]}px;
-color: ${p => p.theme.colors.brown};
+color: ${p => p.theme.colors.lightSecond};
 font-size: ${p => p.theme.fontSizes.x};
 `
 

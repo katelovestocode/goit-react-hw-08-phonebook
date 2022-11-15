@@ -18,7 +18,7 @@ width: 120px;
 padding: ${p => p.theme.space[2]}px;
 background-color: ${p => p.theme.colors.superLightBrown};
 border:  ${p => p.theme.borders.bold} ${p => p.theme.colors.lightSecond};
-border-radius:${p => p.theme.radii.normal};
+border-radius:${p => p.theme.radii.superRound};
 
   &:hover {
     background-color: ${p => p.theme.colors.lightSecond};

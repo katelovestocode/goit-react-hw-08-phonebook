@@ -48,6 +48,7 @@ export const theme = {
   radii: {
     none: '0',
     normal: '4px',
+    superRound: '10px',
     round: '50%',
   },
 };

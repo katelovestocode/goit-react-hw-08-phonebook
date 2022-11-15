@@ -1,4 +1,4 @@
-import { Container, Title } from './Home.styled';
+import { Container, Title, Subtitle } from './Home.styled';
 
 export default function Home() {
   return (
@@ -7,6 +7,9 @@ export default function Home() {
         Welcome to Phonebook
         <span> &#128075;</span>
       </Title>
+      <Subtitle>
+        Please, register or login to work with private collections of contacts.
+      </Subtitle>
     </Container>
   );
 }

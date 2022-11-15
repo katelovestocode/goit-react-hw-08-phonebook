@@ -23,7 +23,7 @@ export const Input = styled.input`
 width: 400px;
 padding: ${p => p.theme.space[2]}px;
 border:  ${p => p.theme.borders.bold} ${p => p.theme.colors.brownSecond};
-border-radius:${p => p.theme.radii.normal};
+border-radius:${p => p.theme.radii.superRound};
 background-color: ${p => p.theme.colors.white};
 color: ${p => p.theme.colors.accentColor};
 font-size: 28px;
@@ -45,11 +45,18 @@ width: 150px;
 padding: ${p => p.theme.space[2]}px;
 background-color: ${p => p.theme.colors.superLightBrown};
 border:  ${p => p.theme.borders.bold} ${p => p.theme.colors.lightSecond};
-border-radius:${p => p.theme.radii.normal};
+border-radius:${p => p.theme.radii.superRound};
 
   &:hover {
     background-color: ${p => p.theme.colors.lightSecond};
     color: ${p => p.theme.colors.brightAccent};
   }
 
+`
+
+
+export const Warning = styled.p`
+color: ${p => p.theme.colors.red};
+font-size: ${p => p.theme.fontSizes.ml};
+font-weight: ${p => p.theme.fontWeights.bold};
 `

@@ -14,7 +14,7 @@ export const Input = styled.input`
 width: 400px;
 padding: ${p => p.theme.space[2]}px;
 border:  ${p => p.theme.borders.bold} ${p => p.theme.colors.brownSecond};
-border-radius:${p => p.theme.radii.normal};
+border-radius:${p => p.theme.radii.superRound};
 font-size:  ${p => p.theme.fontSizes.sm};
 background-color: ${p => p.theme.colors.white};
 color: ${p => p.theme.colors.accentColor};

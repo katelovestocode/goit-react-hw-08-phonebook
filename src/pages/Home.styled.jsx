@@ -2,6 +2,7 @@ import styled from '@emotion/styled'
 
 export const Container = styled.div`
 display: flex;
+flex-direction: column;
 align-items: center;
 justify-content: center;
 
@@ -13,4 +14,11 @@ margin-top: 50px;
 color: ${p => p.theme.colors.brownSecond};
 font-family: 'Dancing Script', cursive, sans-serif;
 
+`
+
+export const Subtitle = styled.h2` 
+font-size: 60px;
+margin-top: 50px;
+color: ${p => p.theme.colors.lightSecond};
+font-family: 'Dancing Script', cursive, sans-serif;
 `
