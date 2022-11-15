@@ -50,6 +50,4 @@ font-size: 24px;
 export const Container = styled.div`
 display: flex;
 padding-left: 50px;
-// align-items: center;
-// justify-content: space-around;
 `

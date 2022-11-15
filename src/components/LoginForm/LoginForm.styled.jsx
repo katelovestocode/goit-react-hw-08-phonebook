@@ -6,10 +6,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-conten: center;
-// border:  ${p => p.theme.borders.bold} ${p => p.theme.colors.accentColor};
-// border-radius:${p => p.theme.radii.normal};
 `
-
 
 export const Label = styled.label`
 padding: ${p => p.theme.space[2]}px;
@@ -51,9 +48,7 @@ border-radius:${p => p.theme.radii.superRound};
     background-color: ${p => p.theme.colors.lightSecond};
     color: ${p => p.theme.colors.brightAccent};
   }
-
 `
-
 
 export const Warning = styled.p`
 color: ${p => p.theme.colors.red};

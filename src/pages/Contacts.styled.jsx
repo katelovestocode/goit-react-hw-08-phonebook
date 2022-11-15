@@ -7,7 +7,6 @@ font-size: ${p => p.theme.fontSizes.x};
 `
 
 export const Container = styled.div`
-
 `
 export const LeftBox = styled.div`
 display: flex;

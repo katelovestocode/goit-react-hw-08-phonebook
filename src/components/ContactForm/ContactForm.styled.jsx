@@ -6,8 +6,6 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-conten: center;
-// border:  ${p => p.theme.borders.bold} ${p => p.theme.colors.accentColor};
-// border-radius:${p => p.theme.radii.normal};
 `
 
 
