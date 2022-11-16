@@ -8,14 +8,14 @@ justify-content: center;
 `
 
 export const Title = styled.h1`
-font-size: 78px;
+font-size: 50px;
 margin-top: 50px;
 color: ${p => p.theme.colors.brownSecond};
 font-family: 'Dancing Script', cursive, sans-serif;
 `
 
 export const Subtitle = styled.h2` 
-font-size: 60px;
+font-size: 35px;
 margin-top: 50px;
 color: ${p => p.theme.colors.lightSecond};
 font-family: 'Dancing Script', cursive, sans-serif;

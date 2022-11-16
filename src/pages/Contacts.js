@@ -20,12 +20,10 @@ export default function Contacts() {
   return (
     <Box
       display="flex"
-      flexDirection="row"
+      flexDirection="column"
       alignItems="center"
-      justifyContent="space-around"
-      pl={150}
-      pr={150}
-      as="main"
+      justifyContent="center"
+      // as="main"
     >
       <LeftBox>
         <Title> Phonebook </Title>

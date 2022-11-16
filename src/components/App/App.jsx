@@ -6,7 +6,8 @@ import { useDispatch } from 'react-redux';
 import { refreshUser } from "../../redux/auth/operations"
 import { RestrictedRoute } from "../RestrictedRoute"
 import { PrivateRoute } from "components/PrivateRoute";
-import {Loader} from "../Loader/Loader"
+import { Loader } from "../Loader/Loader"
+import {Container} from "../Container/Container"
 
 
 const HomePage = lazy(() => import('../../pages/Home'));
@@ -28,7 +29,7 @@ export const App = () => {
 
   return (
 
-    <div >       
+    <Container >       
       {isRefreshing ? <Loader/>  : ( 
       <Routes>
       <Route path="/" element={<Layout />} >
@@ -38,7 +39,7 @@ export const App = () => {
       <Route path="/contacts" element={<PrivateRoute redirectTo="/login" component={<ContactsPage />} /> }/>
       </Route>
       </Routes>)}
-      </div>
+    </Container>
   )
 };
 

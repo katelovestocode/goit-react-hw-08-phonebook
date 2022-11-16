@@ -11,7 +11,7 @@ body {
   background-image: url('./img/image.jpg');
   background-repeat: no-repeat;
   background-size: auto;
-  padding: 50px 100px 50px 100px;
+  /* padding: 50px 100px 50px 100px; */
 }
 
 code {

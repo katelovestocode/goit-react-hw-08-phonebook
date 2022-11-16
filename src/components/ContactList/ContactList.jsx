@@ -28,9 +28,9 @@ const ContactList = () => {
     <List>
       {visibleContacts.map(({ id, name, number }) =>
       (<ListItem key={id}>
-        <Span> {name}: </Span> 
-        <Container>   <Text> {number}</Text>
-        <Button onClick={() => deleteContact(id)}> Delete </Button> </Container>
+        <Container>  <Span> {name}: </Span> 
+          <Text> {number}</Text> </Container>
+        <Button onClick={() => deleteContact(id)}> Delete </Button> 
       
       </ListItem>))}
     </List>
