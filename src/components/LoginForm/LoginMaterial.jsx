@@ -114,11 +114,11 @@ export const LoginMaterial = () =>  {
               </Button>
               <Grid container>
                 <Grid item>
-                  <NavLink to="/register"> 
-                  <Link href="#" variant="body2">
+                  
+                  <Link href="register" variant="body2">
                     {"Don't have an account? Sign Up"}
                     </Link>
-                    </NavLink>
+                   
                 </Grid>
               </Grid>
               <Copyright sx={{ mt: 5 }} />

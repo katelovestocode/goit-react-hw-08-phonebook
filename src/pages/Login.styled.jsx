@@ -1,6 +1,8 @@
 import styled from '@emotion/styled'
 
 export const Container = styled.div`
-  margin-left: 100px;
-  margin-right: 100px;
+ margin: 0 15px;
+ 
+ @media (min-width: 860px) { 
+ margin: 0 100px;}
 `
