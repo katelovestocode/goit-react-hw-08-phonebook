@@ -4,7 +4,7 @@ import { UserMenu } from './UserMenu/UserMenu.jsx';
 import { AuthNav } from './AuthNav/AuthNav';
 import { useAuth } from 'hooks';
 import { Nav } from './App/App.styled.jsx';
-import { NavLinkItem, Container } from '../components/App/App.styled';
+import { NavLinkItem, Container, Header } from '../components/App/App.styled';
 import { Loader } from './Loader/Loader.jsx';
 
 export const Layout = () => {
@@ -12,7 +12,7 @@ export const Layout = () => {
 
   return (
     <div>
-      <header>
+      <Header>
         <Nav>
           <Container>
             <NavLinkItem to="/" key={'home'} end>
@@ -28,7 +28,7 @@ export const Layout = () => {
 
           {isLoggedIn ? <UserMenu /> : <AuthNav />}
         </Nav>
-      </header>
+      </Header>
 
       <Suspense fallback={<Loader />}>
         <Outlet />

@@ -2,7 +2,7 @@ import styled from '@emotion/styled'
 
 export const Title = styled.h1`
 padding: 10px 10px 0 10px;
-color: ${p => p.theme.colors.lightSecond};
+color: ${p => p.theme.colors.darkBlue};
 font-size: ${p => p.theme.fontSizes.ml};
 `
 
@@ -22,6 +22,6 @@ padding: 0 20px 20px 20px;
 export const Loader = styled.p`
 margin-left: ${p => p.theme.fontSizes.ml};
 margin-bottom: ${p => p.theme.fontSizes.l};
-color: ${p => p.theme.colors.darkAccent};
+color: ${p => p.theme.colors.darkBlue};
 font-size: 28px;
 `

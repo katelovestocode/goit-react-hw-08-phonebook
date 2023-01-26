@@ -28,8 +28,8 @@ export const App = () => {
 
 
   return (
-
-    <Container >       
+  <Container> 
+          
       {isRefreshing ? <Loader/>  : ( 
       <Routes>
       <Route path="/" element={<Layout />} >
@@ -39,7 +39,9 @@ export const App = () => {
       <Route path="/contacts" element={<PrivateRoute redirectTo="/login" component={<ContactsPage />} /> }/>
       </Route>
       </Routes>)}
-    </Container>
+
+      
+      </Container>
   )
 };
 

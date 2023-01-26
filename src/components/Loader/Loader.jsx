@@ -7,7 +7,7 @@ export const Loader = () => {
       <Circles
         height="130"
         width="130"
-        color="#722620"
+        color="#A0AEC0"
         ariaLabel="circles-loading"
         wrapperStyle={{}}
         wrapperClass=""
