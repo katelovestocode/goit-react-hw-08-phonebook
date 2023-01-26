@@ -1,4 +1,5 @@
-import { Container, Title, Subtitle } from './Home.styled';
+import { Container, Title, Subtitle} from './Home.styled';
+import homepageImage from '../img/homepageImage2.jpg';
 
 export default function Home() {
   return (
@@ -10,6 +11,8 @@ export default function Home() {
       <Subtitle>
         Please, register or login to work with private collections of contacts.
       </Subtitle>
+
+      <img src={homepageImage} alt="busy girl" width={600} />
     </Container>
   );
 }
