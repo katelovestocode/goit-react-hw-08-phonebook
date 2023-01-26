@@ -14,7 +14,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { logIn } from 'redux/auth/operations';
 import { Warning} from "./LoginForm.styled"
 import { selectIsError } from "../../redux/auth/selectors"
-import { NavLink } from 'react-router-dom';
 
 function Copyright(props) {
   return (

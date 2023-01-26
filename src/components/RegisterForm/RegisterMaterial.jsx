@@ -12,7 +12,7 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useDispatch } from 'react-redux';
 import { register } from 'redux/auth/operations';
-import { NavLink } from 'react-router-dom';
+
 
 function Copyright(props) {
   return (
